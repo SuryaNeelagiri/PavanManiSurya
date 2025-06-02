@@ -8,6 +8,10 @@ public class AdukundamApex {
     public static baburaocls dosomething(){
         string personName = 'sri';
          Account acnt  = [select id, Name From Account Limit 1];
+
+
+
+         
         
         baburaocls wrp = new baburaocls();
         wrp.personNameVar = personName;
