@@ -15,7 +15,7 @@ public class AmoooMaps {
     }
     
     public static void oneTomanyMaps(){
-        
+        // it is retrive the contacts date//        
         List<contact> conslist = [Select Id, AccountId, LastName From contact where accountId != null];
         Map<Id, List<Contact>> accountIdWithlistofContactsMap = new Map<Id, List<Contact>>();        
         for(contact con: conslist){            
