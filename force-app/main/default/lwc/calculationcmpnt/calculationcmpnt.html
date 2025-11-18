@@ -1,0 +1,48 @@
+<template>
+    <lightning-card  variant="Narrow"  title="calculator" icon-name="standard:account">
+        <lightning-input 
+         type="number" 
+         label="firstnumber"
+         value={firstnumber}
+         onchange={handlechange}>
+        </lightning-input>
+
+        <lightning-input 
+         type="number" 
+         label="secondnumber"
+         value={secondnumber} 
+         onchange={handlechange}>
+        </lightning-input>
+
+       <lightning-button 
+         variant="brand" 
+         label="Add" 
+         title="Addition"
+         onclick={handleClick} >
+        </lightning-button>
+
+        <lightning-button 
+         variant="brand" 
+         label="sub" 
+         title="subtraction"
+         onclick={handlesubtraction} >
+        </lightning-button>
+
+        <lightning-button 
+         variant="brand" 
+         label="multify" 
+         title="multification"
+         onclick={handlemultification} >
+        </lightning-button>
+
+
+       
+        
+        
+        <p class="slds-p-horizontal_small">
+            calcualted result is : {result}
+        </p>
+        <p slot="footer">skala </p>
+    </lightning-card>
+    
+</template>
