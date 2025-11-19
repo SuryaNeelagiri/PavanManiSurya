@@ -1,0 +1,27 @@
+<template>
+   <lightning-card icon-name="standard:account" variant="base">
+      hi,{displayvar},{objvar}
+        <lightning-input 
+        type="text"
+        label="Enter some text"
+        value={displayvar}
+        onchange={handlevent}
+        ></lightning-input>
+
+        <lightning-input type="text" 
+        label="Enter some text"
+        value={objvar}
+        onchange={handleventtwo}
+        placeholder="type here..."></lightning-input>
+    
+    <div slot="footer">
+        skalaaaaa
+       
+    </div>
+    <div>
+      <!-- Card Body  -->
+      
+    </div>
+  </lightning-card>
+    
+</template>

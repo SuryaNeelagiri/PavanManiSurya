@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  title="for each loop">
+        <template  for:each={personNames} for:item="item" for:index="index">
+            <p key={item.index} > {item}</p>
+
+        </template>
+        
+        
+        <p slot="footer">Skala</p>
+    </lightning-card>
+    
+</template>
