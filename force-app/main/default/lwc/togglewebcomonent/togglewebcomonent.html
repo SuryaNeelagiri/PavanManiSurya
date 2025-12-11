@@ -1,0 +1,23 @@
+<template>
+     <!--<lightning-input 
+        type="toggle" 
+        label="Enable Feature" 
+        checked={isFeatureEnabled} 
+        onchange={handleToggleChange}>
+    </lightning-input>-->
+     <lightning-card title="Toggle screen" 
+                     icon-name="standard:account">
+       <!-- /*<p>This card features with Toggle have to click some Actions.</p>*/-->
+        <lightning-button label="New" 
+                          slot="actions">
+                          onclick{handleToggleChange}
+        </lightning-button>
+
+     </lightning-card>
+     <template if:true={isshow}>
+        showing the text after clicking the button.....
+
+     </template>
+
+    
+</template>

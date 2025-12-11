@@ -1,3 +1,16 @@
 <template>
-    Hi, welcome to salesforce LWC development!,{welcome}
+    <lightning-card title="Welcome" icon-name="standard:account">
+        
+            <p>Hi, welcome to Salesforce LWC development! {welcome}</p>
+       
+        <lightning-input 
+           type ="text" 
+           lable ="Enter your name"
+           value = {welcome}
+           onchange = {handleChange}>
+
+        </lightning-input>
+       
+        <p slot="footer">Thanks skala</p>
+    </lightning-card>
 </template>
